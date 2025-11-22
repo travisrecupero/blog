@@ -1,0 +1,21 @@
+// Security Configuration Template
+// Copy this to 'config-secure.js' and add your GitHub token for local development
+// This file should NEVER be committed to the repository
+
+window.SECURE_CONFIG = {
+    // Your GitHub Personal Access Token (for local development only)
+    // Get one from: https://github.com/settings/tokens
+    GITHUB_TOKEN: 'your_github_token_here',
+
+    // Filtering criteria for notes to publish
+    PUBLISH_CRITERIA: {
+        excludeTags: ['private', 'draft', 'personal', 'hide'],
+        excludePatterns: [
+            /private/i,     // Contains "private"
+            /draft/i,       // Contains "draft"
+            /\.private\./i  // Contains ".private."
+        ],
+        excludeFiles: [],   // Specific filenames to exclude
+        minContentLength: 50  // Minimum content length in characters
+    }
+};

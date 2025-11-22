@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omnilore</title>
+    <meta name="description" content="Thoughts on computing, mathematics, and philosophy">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <span class="logo-text">Omnilore</span>
+                <div class="search-container">
+                    <input type="text" id="search" placeholder="Search notes..." class="search-input">
+                    <button id="refresh-btn" class="refresh-btn" onclick="forceRefresh()" title="Force refresh from GitHub">
+                        🔄 Refresh
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section id="home" class="section home-section">
+            <div class="container">
+                <div class="hero">
+                    <p class="hero-description">
+                        Thoughts on computing, mathematics, philosophy, and more.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="notes" class="section notes-section">
+            <div class="container">
+                <h2 class="section-title">Notes</h2>
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="computing">Computing</button>
+                    <button class="filter-btn" data-filter="math">Math</button>
+                    <button class="filter-btn" data-filter="philosophy">Philosophy</button>
+                    <button class="filter-btn" data-filter="misc">Misc</button>
+                    <button class="filter-btn" data-filter="research">Research</button>
+                </div>
+
+                <div class="notes-layout">
+                    <!-- Left side: Notes list -->
+                    <div class="notes-sidebar">
+                        <div class="notes-grid" id="notes-grid">
+                            <!-- Notes will be loaded here -->
+                        </div>
+                        <div class="loading" id="loading">
+                            <div class="spinner"></div>
+                            <p>Loading notes from Obsidian vault...</p>
+                        </div>
+                    </div>
+
+                    <!-- Right side: Note reader -->
+                    <div class="note-reader" id="note-reader">
+                        <div class="note-reader-placeholder">
+                            <h3>Select a note to read</h3>
+                            <p>Click on any note card to view its content here.</p>
+                        </div>
+                        <div class="note-reader-content" id="note-reader-content" style="display: none;">
+                            <div class="note-reader-header">
+                                <h2 id="reader-note-title">Note Title</h2>
+                                <button class="note-reader-close" onclick="closeNoteReader()">&times;</button>
+                            </div>
+                            <div class="note-reader-body" id="reader-note-content">
+                                Note content will appear here...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <!-- Load secure configuration -->
+    <script src="config-secure.js"></script>
+
+    <!-- Load main script -->
+    <script src="script.js?v=17"></script>
+</body>
+</html>

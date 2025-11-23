@@ -54,7 +54,6 @@ async function loadNotes() {
             if (response.ok) {
                 const notesData = await response.json();
                 notes = notesData.notes || [];
-                console.log(`✅ Loaded ${notes.length} notes from pre-built data`);
 
                 // Ensure we have valid notes data
                 if (!notes || notes.length === 0) {
@@ -65,10 +64,8 @@ async function loadNotes() {
                 hideLoading(); // Success - hide loading and return
                 return;
             } else {
-                console.log(`Pre-built notes request failed: ${response.status} ${response.statusText}`);
             }
         } catch (error) {
-            console.log('Pre-built notes fetch/parse error:', error.message);
             // Don't throw here - fall through to API fallback
         }
 
@@ -125,7 +122,7 @@ async function loadNotes() {
         filterAndRenderNotes();
 
     } catch (error) {
-        console.error('❌ Error loading notes:', error);
+        console.error('Error loading notes:', error);
         showError(error.message);
     } finally {
         hideLoading();
@@ -309,12 +306,12 @@ function createNoteCard(note) {
     card.setAttribute('data-category', note.category);
     card.onclick = (event) => openNoteReader(note, event.currentTarget);
 
-    const categoryEmojis = {
-        computing: '💻',
-        math: '🔢',
-        philosophy: '🤔',
-        misc: '📝',
-        note: '📝'
+    const categoryIcons = {
+        computing: '[C]',
+        math: '[M]',
+        philosophy: '[P]',
+        misc: '[N]',
+        note: '[N]'
     };
 
     const tagsHtml = note.tags.slice(0, 3).map(tag =>
@@ -323,7 +320,7 @@ function createNoteCard(note) {
 
     card.innerHTML = `
         <h3 class="note-title">
-            <span class="category-indicator">${categoryEmojis[note.category] || '📝'}</span>
+            <span class="category-indicator">${categoryIcons[note.category] || '[N]'}</span>
             ${escapeHtml(note.title)}
         </h3>
         <p class="note-excerpt">${escapeHtml(note.excerpt)}</p>

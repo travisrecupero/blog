@@ -20,12 +20,12 @@
                 if (response.ok) {
                     const json = await response.json();
                     data.textContent = JSON.stringify(json, null, 2);
-                    status.innerHTML += `<br>✅ Success! Found ${json.notes?.length || 0} notes`;
+                    status.innerHTML += `<br>Success! Found ${json.notes?.length || 0} notes`;
                 } else {
                     data.textContent = `Failed to fetch: ${response.status}`;
                 }
             } catch (error) {
-                status.innerHTML = `❌ Error: ${error.message}`;
+                status.innerHTML = `Error: ${error.message}`;
                 data.textContent = error.stack;
             }
         }

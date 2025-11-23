@@ -346,7 +346,7 @@ function showError(message) {
     if (elements.notesGrid) {
         elements.notesGrid.innerHTML = `
             <div style="text-align: center; padding: 2rem; background: #fee; border: 1px solid #fcc; border-radius: 8px; color: #c53030;">
-                <h3>⚠️ Error Loading Notes</h3>
+                <h3>Error Loading Notes</h3>
                 <p>${message}</p>
                 <button onclick="location.reload()" style="padding: 0.5rem 1rem; background: #3182ce; color: white; border: none; border-radius: 4px; cursor: pointer; margin-top: 1rem;">
                     Retry

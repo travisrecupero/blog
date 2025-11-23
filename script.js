@@ -9,17 +9,20 @@ let notes = [];
 let filteredNotes = [];
 let currentFilter = 'all';
 
-// DOM elements
-const elements = {
-    notesGrid: document.getElementById('notes-grid'),
-    loading: document.getElementById('loading'),
-    searchInput: document.getElementById('search'),
-    filterBtns: document.querySelectorAll('.filter-btn')
-};
+// DOM elements - will be set after DOM loads
+let elements = {};
 
 document.addEventListener('DOMContentLoaded', init);
 
 async function init() {
+    // Initialize DOM elements after DOM is ready
+    elements = {
+        notesGrid: document.getElementById('notes-grid'),
+        loading: document.getElementById('loading'),
+        searchInput: document.getElementById('search'),
+        filterBtns: document.querySelectorAll('.filter-btn')
+    };
+
     setupEventListeners();
     await loadNotes();
 }
@@ -52,13 +55,21 @@ async function loadNotes() {
                 const notesData = await response.json();
                 notes = notesData.notes || [];
                 console.log(`✅ Loaded ${notes.length} notes from pre-built data`);
+
+                // Ensure we have valid notes data
+                if (!notes || notes.length === 0) {
+                    throw new Error('Notes data is empty');
+                }
+
                 filterAndRenderNotes();
+                hideLoading(); // Success - hide loading and return
                 return;
             } else {
                 console.log(`Pre-built notes request failed: ${response.status} ${response.statusText}`);
             }
         } catch (error) {
-            console.log('Pre-built notes fetch error:', error.message);
+            console.log('Pre-built notes fetch/parse error:', error.message);
+            // Don't throw here - fall through to API fallback
         }
 
         // Fallback to GitHub API (for local development only)

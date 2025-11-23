@@ -1,0 +1,274 @@
+{
+  "notes": [
+    {
+      "title": "Code Stylometry",
+      "excerpt": "Code Stylometry Link: https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-caliskan-islam.pdf Tags: computing stylometry  Notes -...",
+      "content": "# Code Stylometry\n\nLink: https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-caliskan-islam.pdf\n\nTags: #computing #stylometry\n\n## Notes\n-",
+      "tags": [
+        "computing",
+        "stylometry"
+      ],
+      "category": "computing",
+      "path": "Travis Vault/Computing/Code Stylometry.md",
+      "filename": "Code Stylometry.md",
+      "lastModified": "2025-11-23T00:05:59.625Z",
+      "url": "https://github.com/travisrecupero/obsidian_notes/blob/main/Travis%20Vault%2FComputing%2FCode%20Stylometry.md"
+    },
+    {
+      "title": "Difference engine",
+      "excerpt": "Difference engine Link: https://en.wikipedia.org/wiki/Differenceengine Tags: computing  Notes -...",
+      "content": "# Difference engine\n\nLink: https://en.wikipedia.org/wiki/Difference_engine\n\nTags: #computing\n\n## Notes\n-",
+      "tags": [
+        "computing"
+      ],
+      "category": "computing",
+      "path": "Travis Vault/Computing/Difference engine.md",
+      "filename": "Difference engine.md",
+      "lastModified": "2025-11-23T00:05:59.773Z",
+      "url": "https://github.com/travisrecupero/obsidian_notes/blob/main/Travis%20Vault%2FComputing%2FDifference%20engine.md"
+    },
+    {
+      "title": "Dining philosophers problem",
+      "excerpt": "Dining philosophers problem Link: https://en.wikipedia.org/wiki/Diningphilosophersproblem Tags: computing  Notes -...",
+      "content": "# Dining philosophers problem\n\nLink: https://en.wikipedia.org/wiki/Dining_philosophers_problem\n\nTags: #computing\n\n## Notes\n-",
+      "tags": [
+        "computing"
+      ],
+      "category": "computing",
+      "path": "Travis Vault/Computing/Dining philosophers problem.md",
+      "filename": "Dining philosophers problem.md",
+      "lastModified": "2025-11-23T00:05:59.928Z",
+      "url": "https://github.com/travisrecupero/obsidian_notes/blob/main/Travis%20Vault%2FComputing%2FDining%20philosophers%20problem.md"
+    },
+    {
+      "title": "ENIAC",
+      "excerpt": "ENIAC Link: https://en.wikipedia.org/wiki/ENIAC Tags: computing  Notes -...",
+      "content": "# ENIAC\n\nLink: https://en.wikipedia.org/wiki/ENIAC\n\nTags: #computing\n\n## Notes\n-",
+      "tags": [
+        "computing"
+      ],
+      "category": "computing",
+      "path": "Travis Vault/Computing/ENIAC.md",
+      "filename": "ENIAC.md",
+      "lastModified": "2025-11-23T00:06:00.082Z",
+      "url": "https://github.com/travisrecupero/obsidian_notes/blob/main/Travis%20Vault%2FComputing%2FENIAC.md"
+    },
+    {
+      "title": "Entropy Linux",
+      "excerpt": "Entropy Linux Link: https://hal.inria.fr/hal-00738638/PDF/rr8060.pdf Tags: computing linux  Notes -...",
+      "content": "# Entropy Linux\n\nLink: https://hal.inria.fr/hal-00738638/PDF/rr8060.pdf\n\nTags: #computing #linux\n\n## Notes\n-",
+      "tags": [
+        "computing",
+        "linux"
+      ],
+      "category": "computing",
+      "path": "Travis Vault/Computing/Entropy Linux.md",
+      "filename": "Entropy Linux.md",
+      "lastModified": "2025-11-23T00:06:00.245Z",
+      "url": "https://github.com/travisrecupero/obsidian_notes/blob/main/Travis%20Vault%2FComputing%2FEntropy%20Linux.md"
+    },
+    {
+      "title": "Computing Index",
+      "excerpt": "Computing Index - [[Difference engine]] - [[Dining philosophers problem]] - [[ENIAC]] - [[Konrad Zuse]] - [[Entropy Linux]] - [[Entropy Linux]] - [[Code Stylometry]]...",
+      "content": "# Computing Index\n\n- [[Difference engine]]\n- [[Dining philosophers problem]]\n- [[ENIAC]]\n- [[Konrad Zuse]]\n- [[Entropy Linux]]\n- [[Entropy Linux]]\n- [[Code Stylometry]]",
+      "tags": [],
+      "category": "computing",
+      "path": "Travis Vault/Computing/Index.md",
+      "filename": "Index.md",
+      "lastModified": "2025-11-23T00:06:00.425Z",
+      "url": "https://github.com/travisrecupero/obsidian_notes/blob/main/Travis%20Vault%2FComputing%2FIndex.md"
+    },
+    {
+      "title": "Konrad Zuse",
+      "excerpt": "Konrad Zuse Link: https://en.wikipedia.org/wiki/KonradZuse Tags: computing  Notes -...",
+      "content": "# Konrad Zuse\n\nLink: https://en.wikipedia.org/wiki/Konrad_Zuse\n\nTags: #computing\n\n## Notes\n-",
+      "tags": [
+        "computing"
+      ],
+      "category": "computing",
+      "path": "Travis Vault/Computing/Konrad Zuse.md",
+      "filename": "Konrad Zuse.md",
+      "lastModified": "2025-11-23T00:06:00.604Z",
+      "url": "https://github.com/travisrecupero/obsidian_notes/blob/main/Travis%20Vault%2FComputing%2FKonrad%20Zuse.md"
+    },
+    {
+      "title": "Library Index",
+      "excerpt": "Library Index  Math - [[Math/Index]]  Computing - [[Computing/Index]]  Philosophy - [[Philosophy/Index]]  Misc - [[Misc/Index]]  Interview - [[Interview/Index]]  Template - [[Template/Index]]...",
+      "content": "# Library Index\n\n## Math\n- [[Math/Index]]\n\n## Computing\n- [[Computing/Index]]\n\n## Philosophy\n- [[Philosophy/Index]]\n\n## Misc\n- [[Misc/Index]]\n\n## Interview\n- [[Interview/Index]]\n\n## Template\n- [[Template/Index]]",
+      "tags": [],
+      "category": "note",
+      "path": "Travis Vault/Index.md",
+      "filename": "Index.md",
+      "lastModified": "2025-11-23T00:06:00.784Z",
+      "url": "https://github.com/travisrecupero/obsidian_notes/blob/main/Travis%20Vault%2FIndex.md"
+    },
+    {
+      "title": "Cannonball problem",
+      "excerpt": "Cannonball problem Link: https://en.wikipedia.org/wiki/Cannonballproblem Tags: math  Notes -...",
+      "content": "# Cannonball problem\n\nLink: https://en.wikipedia.org/wiki/Cannonball_problem\n\nTags: #math\n\n## Notes\n-",
+      "tags": [
+        "math"
+      ],
+      "category": "math",
+      "path": "Travis Vault/Math/Cannonball problem.md",
+      "filename": "Cannonball problem.md",
+      "lastModified": "2025-11-23T00:06:01.427Z",
+      "url": "https://github.com/travisrecupero/obsidian_notes/blob/main/Travis%20Vault%2FMath%2FCannonball%20problem.md"
+    },
+    {
+      "title": "Math Index",
+      "excerpt": "Math Index - [[Cannonball problem]] - [[Optimal stopping]] - [[Perrin number]] - [[Umbral calculus]] - [[Édouard Lucas]]...",
+      "content": "# Math Index\n\n- [[Cannonball problem]]\n- [[Optimal stopping]]\n- [[Perrin number]]\n- [[Umbral calculus]]\n- [[Édouard Lucas]]",
+      "tags": [],
+      "category": "math",
+      "path": "Travis Vault/Math/Index.md",
+      "filename": "Index.md",
+      "lastModified": "2025-11-23T00:06:01.584Z",
+      "url": "https://github.com/travisrecupero/obsidian_notes/blob/main/Travis%20Vault%2FMath%2FIndex.md"
+    },
+    {
+      "title": "Optimal stopping",
+      "excerpt": "Optimal stopping Link: https://en.wikipedia.org/wiki/Optimalstopping?oldformat=true Tags: math  Notes -...",
+      "content": "# Optimal stopping\n\nLink: https://en.wikipedia.org/wiki/Optimal_stopping?oldformat=true\n\nTags: #math\n\n## Notes\n-",
+      "tags": [
+        "math"
+      ],
+      "category": "math",
+      "path": "Travis Vault/Math/Optimal stopping.md",
+      "filename": "Optimal stopping.md",
+      "lastModified": "2025-11-23T00:06:01.759Z",
+      "url": "https://github.com/travisrecupero/obsidian_notes/blob/main/Travis%20Vault%2FMath%2FOptimal%20stopping.md"
+    },
+    {
+      "title": "Perrin number",
+      "excerpt": "Perrin number Link: https://en.wikipedia.org/wiki/Perrinnumber Tags: math  Notes -...",
+      "content": "# Perrin number\n\nLink: https://en.wikipedia.org/wiki/Perrin_number\n\nTags: #math\n\n## Notes\n-",
+      "tags": [
+        "math"
+      ],
+      "category": "math",
+      "path": "Travis Vault/Math/Perrin number.md",
+      "filename": "Perrin number.md",
+      "lastModified": "2025-11-23T00:06:01.935Z",
+      "url": "https://github.com/travisrecupero/obsidian_notes/blob/main/Travis%20Vault%2FMath%2FPerrin%20number.md"
+    },
+    {
+      "title": "Umbral calculus",
+      "excerpt": "Umbral calculus Link: https://en.wikipedia.org/wiki/Umbralcalculus Tags: math  Notes -...",
+      "content": "# Umbral calculus\n\nLink: https://en.wikipedia.org/wiki/Umbral_calculus\n\nTags: #math\n\n## Notes\n-",
+      "tags": [
+        "math"
+      ],
+      "category": "math",
+      "path": "Travis Vault/Math/Umbral calculus.md",
+      "filename": "Umbral calculus.md",
+      "lastModified": "2025-11-23T00:06:02.104Z",
+      "url": "https://github.com/travisrecupero/obsidian_notes/blob/main/Travis%20Vault%2FMath%2FUmbral%20calculus.md"
+    },
+    {
+      "title": "Édouard Lucas",
+      "excerpt": "Édouard Lucas Link: https://en.wikipedia.org/wiki/%C3%89douardLucas Tags: math  Notes -...",
+      "content": "# Édouard Lucas\n\nLink: https://en.wikipedia.org/wiki/%C3%89douard_Lucas\n\nTags: #math\n\n## Notes\n-",
+      "tags": [
+        "math"
+      ],
+      "category": "math",
+      "path": "Travis Vault/Math/Édouard Lucas.md",
+      "filename": "Édouard Lucas.md",
+      "lastModified": "2025-11-23T00:06:02.270Z",
+      "url": "https://github.com/travisrecupero/obsidian_notes/blob/main/Travis%20Vault%2FMath%2F%C3%89douard%20Lucas.md"
+    },
+    {
+      "title": "Eephus pitch",
+      "excerpt": "Eephus pitch Link: https://en.wikipedia.org/wiki/Eephuspitch Tags: misc baseball  Notes -...",
+      "content": "# Eephus pitch\n\nLink: https://en.wikipedia.org/wiki/Eephus_pitch\n\nTags: #misc #baseball\n\n## Notes\n-",
+      "tags": [
+        "misc",
+        "baseball"
+      ],
+      "category": "misc",
+      "path": "Travis Vault/Misc/Eephus pitch.md",
+      "filename": "Eephus pitch.md",
+      "lastModified": "2025-11-23T00:06:02.441Z",
+      "url": "https://github.com/travisrecupero/obsidian_notes/blob/main/Travis%20Vault%2FMisc%2FEephus%20pitch.md"
+    },
+    {
+      "title": "Computational Complexity",
+      "excerpt": "Computational Complexity Link: https://www.scottaaronson.com/papers/philos.pdf Tags: philosophy   Notes -...",
+      "content": "# Computational Complexity\n\nLink: https://www.scottaaronson.com/papers/philos.pdf\n\nTags: #philosophy \n\n## Notes\n-",
+      "tags": [
+        "philosophy"
+      ],
+      "category": "philosophy",
+      "path": "Travis Vault/Philosophy/Computational Complexity.md",
+      "filename": "Computational Complexity.md",
+      "lastModified": "2025-11-23T00:06:02.825Z",
+      "url": "https://github.com/travisrecupero/obsidian_notes/blob/main/Travis%20Vault%2FPhilosophy%2FComputational%20Complexity.md"
+    },
+    {
+      "title": "Philosophy Index",
+      "excerpt": "Philosophy Index - [[Mathematicism]] - [[Computational Complexity]] - [[Ontological proof]] - [[Kurt Gödel]]...",
+      "content": "# Philosophy Index\n\n- [[Mathematicism]]\n- [[Computational Complexity]]\n- [[Ontological proof]]\n- [[Kurt Gödel]]",
+      "tags": [],
+      "category": "philosophy",
+      "path": "Travis Vault/Philosophy/Index.md",
+      "filename": "Index.md",
+      "lastModified": "2025-11-23T00:06:02.994Z",
+      "url": "https://github.com/travisrecupero/obsidian_notes/blob/main/Travis%20Vault%2FPhilosophy%2FIndex.md"
+    },
+    {
+      "title": "Kurt Gödel",
+      "excerpt": "Kurt Gödel Link: https://www.wikiwand.com/en/articles/KurtG%C3%B6del Tags: philosophy   Notes -...",
+      "content": "# Kurt Gödel\nLink: https://www.wikiwand.com/en/articles/Kurt_G%C3%B6del\n\nTags: #philosophy \n\n## Notes\n-",
+      "tags": [
+        "philosophy"
+      ],
+      "category": "philosophy",
+      "path": "Travis Vault/Philosophy/Kurt Gödel.md",
+      "filename": "Kurt Gödel.md",
+      "lastModified": "2025-11-23T00:06:03.273Z",
+      "url": "https://github.com/travisrecupero/obsidian_notes/blob/main/Travis%20Vault%2FPhilosophy%2FKurt%20G%C3%B6del.md"
+    },
+    {
+      "title": "Mathematicism",
+      "excerpt": "Mathematicism Link: https://en.wikipedia.org/wiki/Mathematicism Tags: philosophy  Notes -...",
+      "content": "# Mathematicism\n\nLink: https://en.wikipedia.org/wiki/Mathematicism\n\nTags: #philosophy\n\n## Notes\n-",
+      "tags": [
+        "philosophy"
+      ],
+      "category": "math",
+      "path": "Travis Vault/Philosophy/Mathematicism.md",
+      "filename": "Mathematicism.md",
+      "lastModified": "2025-11-23T00:06:03.445Z",
+      "url": "https://github.com/travisrecupero/obsidian_notes/blob/main/Travis%20Vault%2FPhilosophy%2FMathematicism.md"
+    },
+    {
+      "title": "Ontological proof",
+      "excerpt": "Ontological proof Link: https://www.wikiwand.com/en/articles/G%C3%B6del'sontologicalproof Tags: philosophy   Notes -...",
+      "content": "# Ontological proof\n\nLink: https://www.wikiwand.com/en/articles/G%C3%B6del's_ontological_proof\n\nTags: #philosophy \n\n## Notes\n-",
+      "tags": [
+        "philosophy"
+      ],
+      "category": "philosophy",
+      "path": "Travis Vault/Philosophy/Ontological proof.md",
+      "filename": "Ontological proof.md",
+      "lastModified": "2025-11-23T00:06:03.609Z",
+      "url": "https://github.com/travisrecupero/obsidian_notes/blob/main/Travis%20Vault%2FPhilosophy%2FOntological%20proof.md"
+    },
+    {
+      "title": "Template Heading",
+      "excerpt": "Template Heading Link: www.template.com Tags: template  Notes -...",
+      "content": "# Template Heading\n\nLink: www.template.com\n\nTags: #template\n\n## Notes\n-",
+      "tags": [
+        "template"
+      ],
+      "category": "note",
+      "path": "Travis Vault/Template/Template Title.md",
+      "filename": "Template Title.md",
+      "lastModified": "2025-11-23T00:06:03.971Z",
+      "url": "https://github.com/travisrecupero/obsidian_notes/blob/main/Travis%20Vault%2FTemplate%2FTemplate%20Title.md"
+    }
+  ],
+  "generatedAt": "2025-11-23T00:06:03.972Z",
+  "totalNotes": 21
+}

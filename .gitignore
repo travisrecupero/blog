@@ -1,0 +1,39 @@
+# Security - Never commit these files
+config-secure.js
+config-secure.js.local
+.env
+*.env
+*.key
+*.pem
+
+# API Keys and tokens
+**/secrets/
+**/*secret*
+**/*token*
+**/*key*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Cache and temp files
+node_modules/
+npm-debug.log*
+.cache/
+dist/
+build/
+
+# Personal notes (if you want to test locally)
+test-notes/
+personal/

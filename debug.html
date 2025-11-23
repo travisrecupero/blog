@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug - Notes Data Test</title>
+</head>
+<body>
+    <h1>Notes Data Debug</h1>
+    <div id="status">Loading...</div>
+    <pre id="data"></pre>
+
+    <script>
+        async function testNotesData() {
+            const status = document.getElementById('status');
+            const data = document.getElementById('data');
+
+            try {
+                const response = await fetch('notes-data.json');
+                status.innerHTML = `Status: ${response.status} ${response.statusText}`;
+
+                if (response.ok) {
+                    const json = await response.json();
+                    data.textContent = JSON.stringify(json, null, 2);
+                    status.innerHTML += `<br>✅ Success! Found ${json.notes?.length || 0} notes`;
+                } else {
+                    data.textContent = `Failed to fetch: ${response.status}`;
+                }
+            } catch (error) {
+                status.innerHTML = `❌ Error: ${error.message}`;
+                data.textContent = error.stack;
+            }
+        }
+
+        testNotesData();
+    </script>
+</body>
+</html>

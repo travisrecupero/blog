@@ -61,7 +61,15 @@ async function loadNotes() {
                     throw new Error('Notes data is empty');
                 }
 
+                console.log('🔧 About to call filterAndRenderNotes...');
+                console.log('🔧 DOM elements check:', {
+                    notesGrid: !!elements.notesGrid,
+                    loading: !!elements.loading,
+                    searchInput: !!elements.searchInput
+                });
+
                 filterAndRenderNotes();
+                console.log('✅ filterAndRenderNotes completed successfully');
                 hideLoading(); // Success - hide loading and return
                 return;
             } else {

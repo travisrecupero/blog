@@ -56,13 +56,20 @@ async function loadNotes() {
                 return;
             }
         } catch (error) {
-            console.log('Pre-built notes not found, falling back to API...');
+            console.log('Pre-built notes not found, checking for local config...');
         }
 
-        // Fallback to GitHub API (for local development)
+        // Fallback to GitHub API (for local development only)
         const token = window.SECURE_CONFIG?.GITHUB_TOKEN;
         if (!token || token === 'your_token_here') {
-            throw new Error('Please add your GitHub token to config-secure.js or ensure notes-data.json exists');
+            // For production: notes should come from pre-built data
+            // For local dev: need config-secure.js
+            const isLocalDev = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+            if (isLocalDev) {
+                throw new Error('Local development requires config-secure.js with your GitHub token. Copy config-secure.js.example to config-secure.js and add your token.');
+            } else {
+                throw new Error('Notes data not available. This appears to be a deployment issue - the GitHub Actions build may have failed to generate notes-data.json');
+            }
         }
 
         const headers = {

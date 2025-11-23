@@ -27,6 +27,19 @@ jobs:
       run: |
         node .github/scripts/fetch-notes.js
 
+    - name: Verify notes data generated
+      run: |
+        if [ -f notes-data.json ]; then
+          echo "notes-data.json created successfully"
+          echo "File size: $(wc -c < notes-data.json) bytes"
+          echo "First few lines:"
+          head -10 notes-data.json
+        else
+          echo "notes-data.json was not created!"
+          ls -la
+          exit 1
+        fi
+
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       if: github.ref == 'refs/heads/main'

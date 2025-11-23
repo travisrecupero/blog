@@ -320,7 +320,6 @@ function createNoteCard(note) {
 
     card.innerHTML = `
         <h3 class="note-title">
-            <span class="category-indicator">${categoryIcons[note.category] || '[N]'}</span>
             ${escapeHtml(note.title)}
         </h3>
         <p class="note-excerpt">${escapeHtml(note.excerpt)}</p>

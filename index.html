@@ -84,8 +84,18 @@
 
 
 
-    <!-- Load secure configuration -->
-    <script src="config-secure.js"></script>
+    <!-- Load secure configuration (only for local development) -->
+    <script>
+        // Try to load local config for development, ignore if missing
+        try {
+            const script = document.createElement('script');
+            script.src = 'config-secure.js';
+            script.onerror = () => console.log('Local config not found - using production mode');
+            document.head.appendChild(script);
+        } catch (e) {
+            console.log('Running in production mode');
+        }
+    </script>
 
     <!-- Load main script -->
     <script src="script.js?v=17"></script>

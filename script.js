@@ -61,15 +61,7 @@ async function loadNotes() {
                     throw new Error('Notes data is empty');
                 }
 
-                console.log('🔧 About to call filterAndRenderNotes...');
-                console.log('🔧 DOM elements check:', {
-                    notesGrid: !!elements.notesGrid,
-                    loading: !!elements.loading,
-                    searchInput: !!elements.searchInput
-                });
-
                 filterAndRenderNotes();
-                console.log('✅ filterAndRenderNotes completed successfully');
                 hideLoading(); // Success - hide loading and return
                 return;
             } else {
@@ -386,11 +378,19 @@ function escapeHtml(text) {
 }
 
 function formatDate(date) {
+    // Handle both Date objects and ISO strings
+    const dateObj = date instanceof Date ? date : new Date(date);
+
+    // Check if the date is valid
+    if (isNaN(dateObj.getTime())) {
+        return 'Unknown date';
+    }
+
     return new Intl.DateTimeFormat('en-US', {
         year: 'numeric',
         month: 'short',
         day: 'numeric'
-    }).format(date);
+    }).format(dateObj);
 }
 
 // Note reader functionality

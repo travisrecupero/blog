@@ -54,9 +54,11 @@ async function loadNotes() {
                 console.log(`✅ Loaded ${notes.length} notes from pre-built data`);
                 filterAndRenderNotes();
                 return;
+            } else {
+                console.log(`Pre-built notes request failed: ${response.status} ${response.statusText}`);
             }
         } catch (error) {
-            console.log('Pre-built notes not found, checking for local config...');
+            console.log('Pre-built notes fetch error:', error.message);
         }
 
         // Fallback to GitHub API (for local development only)

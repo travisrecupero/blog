@@ -40,6 +40,17 @@ jobs:
           exit 1
         fi
 
+    - name: List files before deployment
+      run: |
+        echo "Files in current directory:"
+        ls -la
+        echo "Checking for notes-data.json:"
+        if [ -f notes-data.json ]; then
+          echo "✅ notes-data.json exists and will be deployed"
+        else
+          echo "❌ notes-data.json missing!"
+        fi
+
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       if: github.ref == 'refs/heads/main'

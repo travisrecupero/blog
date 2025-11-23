@@ -10,11 +10,10 @@ const CONFIG = {
 
 const token = process.env.GITHUB_TOKEN;
 if (!token) {
-    console.error('❌ GITHUB_TOKEN environment variable is required');
+    console.error('GITHUB_TOKEN environment variable is required');
     process.exit(1);
 }
 
-console.log('🔍 Starting to fetch notes from:', CONFIG.GITHUB_REPO);
 
 const headers = {
     'Authorization': `token ${token}`,
@@ -42,7 +41,7 @@ async function fetchAllMarkdownFiles(path = '') {
 
         return markdownFiles;
     } catch (error) {
-        console.error(`❌ Error fetching ${path}:`, error.message);
+        console.error(`Error fetching ${path}:`, error.message);
         return [];
     }
 }
@@ -102,7 +101,7 @@ async function parseNote(file) {
         };
 
     } catch (error) {
-        console.error(`❌ Error parsing ${file.name}:`, error.message);
+        console.error(`Error parsing ${file.name}:`, error.message);
         return null;
     }
 }
@@ -162,20 +161,16 @@ function makeRequest(url, headers) {
 
 async function main() {
     try {
-        console.log('📁 Fetching markdown files...');
         const allFiles = await fetchAllMarkdownFiles('');
-        console.log(`📁 Found ${allFiles.length} markdown files`);
 
         if (allFiles.length === 0) {
             throw new Error('No markdown files found in repository');
         }
 
-        console.log('📄 Parsing notes...');
         const parsedNotes = [];
 
         for (let i = 0; i < allFiles.length; i++) {
             const file = allFiles[i];
-            console.log(`📄 Parsing ${i + 1}/${allFiles.length}: ${file.name}`);
 
             const note = await parseNote(file);
             if (note) {
@@ -189,11 +184,9 @@ async function main() {
         }
 
         const validNotes = parsedNotes.filter(note => note !== null);
-        console.log(`✅ Parsed ${validNotes.length} valid notes`);
 
         // Apply filtering
         const publishableNotes = validNotes.filter(note => shouldPublishNote(note));
-        console.log(`🎯 ${publishableNotes.length} notes passed filtering`);
 
         if (publishableNotes.length === 0) {
             throw new Error(`No notes passed filtering criteria. Found ${validNotes.length} valid notes but all were filtered out.`);
@@ -207,11 +200,10 @@ async function main() {
         };
 
         fs.writeFileSync('notes-data.json', JSON.stringify(notesData, null, 2));
-        console.log('✅ Notes data written to notes-data.json');
-        console.log(`🎉 Successfully processed ${publishableNotes.length} notes!`);
+console.log(`Successfully processed ${publishableNotes.length} notes`);
 
     } catch (error) {
-        console.error('❌ Error:', error.message);
+        console.error('Error:', error.message);
         process.exit(1);
     }
 }

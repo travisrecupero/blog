@@ -20,10 +20,27 @@ jobs:
       with:
         node-version: '18'
 
+    - name: Apply personal configuration
+      run: |
+        # Enter your own repository names and configurations
+        if [ "$GITHUB_REPOSITORY" = "travisrecupero/blog" ]; then
+          # Update repository references
+          sed -i 's/your-username\/your-obsidian-vault/travisrecupero\/obsidian_notes/g' script.js
+          sed -i 's/your-username\/your-obsidian-vault/travisrecupero\/obsidian_notes/g' .github/scripts/fetch-notes.js
+
+          # Update with your own branding
+          sed -i 's/<title>My Obsidian Blog<\/title>/<title>Omnilore<\/title>/g' index.html
+          sed -i 's/My Obsidian Blog/Omnilore/g' index.html
+          sed -i 's/My digital notes and thoughts/Thoughts on computing, mathematics, and philosophy/g' index.html
+          sed -i 's/My digital notes and thoughts from my Obsidian vault\./Thoughts on computing, mathematics, philosophy, and more\./g' index.html
+
+          echo "Applied personal configuration for Travis"
+        fi
+
     - name: Fetch notes from Obsidian vault
       env:
         GITHUB_TOKEN: ${{ secrets.OBSIDIAN_GITHUB_TOKEN }}
-        OBSIDIAN_REPO: ${{ secrets.OBSIDIAN_REPO || 'travisrecupero/obsidian_notes' }}
+        OBSIDIAN_REPO: ${{ secrets.OBSIDIAN_REPO || 'your-username/your-obsidian-vault' }}
       run: |
         node .github/scripts/fetch-notes.js
 

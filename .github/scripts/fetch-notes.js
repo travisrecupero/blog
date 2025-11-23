@@ -3,7 +3,7 @@ const https = require('https');
 
 // Configuration
 const CONFIG = {
-    GITHUB_REPO: process.env.OBSIDIAN_REPO || 'travisrecupero/obsidian_notes',
+    GITHUB_REPO: process.env.OBSIDIAN_REPO || 'your-username/your-obsidian-vault',
     GITHUB_API_BASE: 'https://api.github.com/repos',
     MAX_EXCERPT_LENGTH: 200
 };
